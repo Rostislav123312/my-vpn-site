@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>SecureNet VPN - Ваша приватность под защитой</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="animated-bg">
+        <div class="gradient-1"></div>
+        <div class="gradient-2"></div>
+        <div class="gradient-3"></div>
+        <div class="noise"></div>
+    </div>
+
+    <!-- Кастомный курсор -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Навигация -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <span>SecureNet VPN</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Возможности</a>
+                <a href="#servers">Серверы</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="#download" class="btn-download-nav">Скачать</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <span class="badge-icon">🚀</span>
+                        <span>Безлимитный трафик</span>
+                    </div>
+                    <h1>Мгновенный VPN<br>для полной анонимности</h1>
+                    <p>Защитите свои данные, обходите географические блокировки и оставайтесь анонимными в интернете с нашим высокоскоростным VPN-сервисом.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="activeUsers">50K+</span>
+                            <span class="stat-label">Активных пользователей</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="serverCount">0</span>
+                            <span class="stat-label">Серверов по всему миру</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Аптайм</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn-primary">
+                            <span>Начать бесплатно</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="ping-status">
+                            <span class="ping-dot"></span>
+                            <span id="globalPing">Проверка пинга...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="globe-container">
+                        <div class="globe-3d"></div>
+                        <div class="floating-elements">
+                            <div class="float-element" style="top: 20%; left: 10%; animation-delay: 0s;">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="float-element" style="top: 60%; right: 15%; animation-delay: 1s;">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="float-element" style="bottom: 20%; left: 20%; animation-delay: 2s;">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="float-element" style="top: 40%; right: 30%; animation-delay: 0.5s;">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Возможности -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Почему мы лучшие</span>
+                <h2>Передовые технологии защиты</h2>
+                <p>Современные решения для вашей безопасности в интернете</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Молниеносная скорость</h3>
+                    <p>Скорость до 10 Гбит/с на всех серверах с оптимизированными протоколами WireGuard.</p>
+                    <div class="feature-bg"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Абсолютная приватность</h3>
+                    <p>Строгая политика отсутствия логов. Никто не узнает, что вы делаете в интернете.</p>
+                    <div class="feature-bg"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Глобальное покрытие</h3>
+                    <p>Серверы в 94 странах мира. Получите доступ к любому контенту из любой точки.</p>
+                    <div class="feature-bg"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Все устройства</h3>
+                    <p>Поддержка Windows, macOS, iOS, Android и даже роутеров. Защитите всю свою цифровую жизнь.</p>
+                    <div class="feature-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" data-target="94">0</span>
+                        <span class="stat-name">Стран мира</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" data-target="10000">0</span>
+                        <span class="stat-name">Терабайт трафика</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" data-target="50000">0</span>
+                        <span class="stat-name">Довольных клиентов</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" data-target="24">0</span>
+                        <span class="stat-name">Поддержка 7/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Серверы с пингом -->
+    <section id="servers" class="servers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Глобальная сеть</span>
+                <h2>Наши серверы по всему миру</h2>
+                <p>Выберите оптимальную локацию с минимальным пингом</p>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-globe"></i> Все серверы
+                </button>
+                <button class="filter-btn" data-filter="europe">
+                    <i class="fas fa-europe"></i> Европа
+                </button>
+                <button class="filter-btn" data-filter="asia">
+                    <i class="fas fa-asia"></i> Азия
+                </button>
+                <button class="filter-btn" data-filter="america">
+                    <i class="fas fa-americas"></i> Америка
+                </button>
+            </div>
+            <div class="servers-grid" id="serversGrid">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Измерение пинга серверов...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Тарифы</span>
+                <h2>Выберите свой план</h2>
+                <p>Простые и прозрачные цены без скрытых платежей</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Бесплатный</h3>
+                        <div class="price">
+                            <span class="currency">₽</span>
+                            <span class="amount">0</span>
+                            <span class="period">/месяц</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 10 ГБ трафика</li>
+                        <li><i class="fas fa-check"></i> 3 страны</li>
+                        <li><i class="fas fa-check"></i> Скорость до 10 Мбит/с</li>
+                        <li><i class="fas fa-check"></i> 1 устройство</li>
+                        <li><i class="fas fa-check"></i> Базовая поддержка</li>
+                    </ul>
+                    <a href="#download" class="btn-secondary">Начать</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">
+                        <i class="fas fa-star"></i> Популярный
+                    </div>
+                    <div class="card-header">
+                        <h3>Премиум</h3>
+                        <div class="price">
+                            <span class="currency">₽</span>
+                            <span class="amount">299</span>
+                            <span class="period">/месяц</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Безлимитный трафик</li>
+                        <li><i class="fas fa-check"></i> 94 страны</li>
+                        <li><i class="fas fa-check"></i> Максимальная скорость</li>
+                        <li><i class="fas fa-check"></i> 10 устройств</li>
+                        <li><i class="fas fa-check"></i> 24/7 поддержка</li>
+                    </ul>
+                    <a href="#download" class="btn-primary">Выбрать план</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Годовой</h3>
+                        <div class="price">
+                            <span class="currency">₽</span>
+                            <span class="amount">199</span>
+                            <span class="period">/месяц</span>
+                        </div>
+                        <div class="save-badge">Экономия 33%</div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Безлимитный трафик</li>
+                        <li><i class="fas fa-check"></i> 94 страны</li>
+                        <li><i class="fas fa-check"></i> Максимальная скорость</li>
+                        <li><i class="fas fa-check"></i> 10 устройств</li>
+                        <li><i class="fas fa-check"></i> 24/7 поддержка</li>
+                    </ul>
+                    <a href="#download" class="btn-secondary">Выбрать план</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Скачивание -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h2>Готовы защитить свою приватность?</h2>
+                <p>Скачайте SecureNet VPN сейчас и получите 7 дней бесплатного Премиум доступа</p>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn">
+                        <i class="fab fa-windows"></i>
+                        <span>Windows</span>
+                    </a>
+                    <a href="#" class="download-btn">
+                        <i class="fab fa-apple"></i>
+                        <span>macOS</span>
+                    </a>
+                    <a href="#" class="download-btn">
+                        <i class="fab fa-android"></i>
+                        <span>Android</span>
+                    </a>
+                    <a href="#" class="download-btn">
+                        <i class="fab fa-app-store-ios"></i>
+                        <span>iOS</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Отзывы</span>
+                <h2>Что говорят наши клиенты</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Avatar">
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Лучший VPN, которым я пользовалась! Скорость отличная, поддержка отвечает мгновенно.</p>
+                        <h4>Анна Иванова</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Avatar">
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Использую уже год, ни разу не подвел. Обхожу все блокировки без проблем.</p>
+                        <h4>Михаил Петров</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Avatar">
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Отличный сервис! Понятный интерфейс, много серверов, реально высокий пинг не замечаю.</p>
+                        <h4>Елена Смирнова</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span>SecureNet VPN</span>
+                    </div>
+                    <p>Ваша конфиденциальность - наша миссия</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Продукт</h4>
+                    <a href="#features">Возможности</a>
+                    <a href="#servers">Серверы</a>
+                    <a href="#pricing">Тарифы</a>
+                    <a href="#download">Скачать</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <a href="#">Помощь</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Новости</h4>
+                    <p>Подпишитесь на рассылку</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Ваш email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SecureNet VPN. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
